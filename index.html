@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .home {
+      text-align: center;
+    }
+
+    .home img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+
+    .projects {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .project-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: #4f46e5;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      background-color: #4f46e5;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="home">
+    <h2>Hello, I'm AyeAye 👋</h2>
+    <p>Back-end Developer (Java & Spring Boot)</p>
+    <img src="https://via.placeholder.com/120" alt="Profile photo">
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Online Store</h3>
+            <p>A simple e-commerce site built with Spring Boot and Thymeleaf.</p>
+        </div>
+        <div class="project-card">
+            <h3>Task Manager API</h3>
+            <p>REST API to manage tasks, built with Spring Boot and PostgreSQL.</p>
+        </div>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>This website! Clean and responsive using only HTML and CSS.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2025 AyeAye. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
